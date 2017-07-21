@@ -1,0 +1,555 @@
+@media (max-width: 1200px) {
+.menu > a {
+    margin-left: 20px;
+}
+.home-style1 h2 {
+    font-size: 62px;
+}
+.home-style1 p {
+    font-size: 20px;
+    line-height: 36px;
+    margin: -20px 0 0;
+}
+.home-style1 h2 {
+    font-size: 62px;
+    line-height: 70px;
+    margin: 20px 0 35px;
+}
+.services > p {
+    padding-right: 30px;
+}
+.how-app-works li > i {
+    height: 110px;
+    line-height: 110px;
+    width: 110px;
+}
+.about-product-thumb > img {
+    width: 490px;
+}
+.feature-button > ul.features-nav {
+    padding: 0 115px;
+}
+.feature-product > p {
+    padding: 10px 60px;
+}
+.app-step-details {
+    padding: 70px 55px;
+}
+.price-area > i {
+    font-size: 35px;
+    left: 32px;
+    margin-top: -19px;
+}
+.testimonials {
+    padding: 50px 60px 40px;
+}
+.team-title > h3 {
+    font-size: 24px;
+    line-height: 33px;
+    margin: -5px 0 5px;
+}
+.blog-info > p {
+    padding-right: 0;
+}
+.home-style1.text-center p {
+    padding: 0;
+}
+.download-main-btns > li {
+    margin-bottom: 20px;
+}
+.start-trial > p {
+    padding: 0;
+}
+.video-app-sec > h3 {
+    font-size: 108px;
+}
+.video-app-sec > p {
+    padding: 0 50px;
+}
+
+
+
+
+
+
+
+
+}
+
+@media (max-width: 980px) {
+.open-menu-responsive {
+    border: 3px solid #f3f3f3;
+    border-radius: 10px;
+    color: #b3b3b3;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    height: 40px;
+    line-height: 34px;
+    margin: 27px 0 27px 20px;
+    text-align: center;
+    width: 50px;
+}
+.menu > nav {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 3px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    display: none;
+    margin-top: -1px;
+    position: absolute;
+    top: 100%;
+    width: 250px;
+}
+.logo {
+    padding: 25px 0;
+}
+.menu > a {
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-top: 26px;
+    padding: 11px 20px;
+}
+.menu > nav > ul > li {
+    float: left;
+    padding: 0;
+    width: 100%;
+}
+.menu > nav > ul > li > a {
+    border-bottom: 1px solid #e8ecec;
+    float: left;
+    padding: 10px 20px;
+    width: 100%;
+}
+.menu > nav > ul > li.menu-item-has-children > ul {
+    box-shadow: none;
+    display: none;
+    float: left;
+    opacity: 1;
+    position: static;
+    visibility: visible;
+    width: 100%;
+}
+.menu > nav > ul > li.menu-item-has-children > ul > li {
+    margin: 0 !important;
+}
+.menu > nav > ul > li.menu-item-has-children > ul > li > a {
+    background: #fbfbfb none repeat scroll 0 0;
+}
+.menu > nav > ul > li:hover > a {
+    color: #333333;
+}
+.menu > nav > ul > li.menu-item-has-children::before {
+    content: "\f107";
+    font-family: fontawesome;
+    height: 10px;
+    opacity: 1;
+    position: absolute;
+    right: 20px;
+    top: 9px;
+    visibility: visible;
+    width: 10px;
+}
+.menu > nav > ul > li.menu-item-has-children.active::before {
+    top: 28px;
+    
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.item-img-1 {
+    opacity: 0.2;
+}
+.home-style1 p {
+    padding: 0;
+}
+.how-app-works > ul > li::before {
+    margin-left: -13%;
+    width: 26%;
+}
+.about-product {
+    display: inherit;
+}
+.about-product-thumb {
+    display: inherit;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+.about-product-thumb > img {
+    float: left;
+    width: 100%;
+}
+.feature-product > p {
+    padding-left: 0;
+    padding-right: 0;
+}
+.fun-facts-sec > .row > div {
+    float: left;
+    width: 50%;
+}
+.fun-fact {
+    text-align: center;
+}
+.price-area > i {
+    font-size: 55px;
+    left: 202px;
+    margin-top: -25px;
+}
+.testimonial-sec {
+    padding: 0;
+}
+.team-title > h3 {
+    font-size: 20px;
+}
+.team-title > span {
+    font-size: 14px;
+}
+.app-gallery {
+    padding: 0;
+}
+.app-gallery li > img {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+
+    width: 100%;
+}
+.contact-form > form .row > div {
+    float: left;
+    width: 100%;
+}
+.how-app-works > ul {
+    padding: 0;
+}
+.header-white .menu nav > ul > li > a {
+    color: #272727;
+}
+.sticky .menu > nav > ul > li {
+    padding: 0;
+}
+.header-white.sticky .menu nav > ul > li:hover > a {
+    color: #272727;
+}
+.form-spot {
+    float: left;
+    margin: 0;
+}
+.home-style1.text-center {
+    padding: 70px 0;
+}
+.client-sec > .row > div {
+    float: left;
+    width: 50%;
+}
+.error-sec > p {
+    margin-left: 0;
+    width: 100%;
+}
+.faq-form button {
+    margin-top: 20px;
+}
+blockquote {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.gallery-single > #dylay img {
+    float: left;
+    width: 50%;
+}
+
+}
+
+@media (max-width: 767px) {
+.open-menu-responsive {
+    display: block;
+}
+.header-logobar {
+    padding: 0 15px;
+}
+.container {
+    padding: 0 15px !important;
+}
+.services-sec > .row > div {
+    float: left;
+    width: 50%;
+}
+.about-product-detail {
+    padding: 0;
+}
+.feature-product > p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.testimonials {
+    padding: 30px;
+}
+.testimonials p {
+    font-size: 15px;
+}
+.video-app-sec > img {
+    margin-bottom: -70px;
+}
+.countdown-sec > ul > li > span {
+    font-size: 40px;
+}
+.countdown-sec li p {
+    font-size: 13px;
+}
+.countdown-sec > ul > li {
+    margin: 0;
+}
+.feature-product > img {
+    float: left;
+    width: 100%;
+}
+.wanna-touch {
+    width: 100%;
+}
+.kenburns.kenburning-container {
+    float: left;
+    width: 100%;
+    position: static;
+}
+.home-style1.kenburns-sec {
+    float: left;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    background: #232323;
+    padding: 50px 30px;
+    margin-top: 60px;
+}
+
+}
+
+@media (max-width: 480px)  {
+.open-menu-responsive {
+    display: block;
+}
+.header-logobar {
+    padding: 0;
+}
+.logo > a > i {
+    font-size: 31px;
+    margin-right: 5px;
+}
+.logo > a > strong {
+    font-size: 22px;
+}
+.menu > a {
+    font-size: 12px;
+    margin-bottom: 15px;
+    margin-top: 27px;
+    padding: 11px 16px;
+}
+.open-menu-responsive {
+    margin-left: 10px;
+}
+.home-style1 > span {
+    font-size: 24px;
+}
+.home-style1 h2 {
+    font-size: 44px;
+    line-height: 50px;
+    margin: 15px 0 35px;
+}
+.home-style1 p {
+    font-size: 16px;
+    line-height: 30px;
+}
+.download-main-btns {
+    margin: 50px 0 0;
+}
+.services-sec > .row > div {
+    width: 100%;
+}
+.block {
+    padding: 100px 0;
+}
+.how-app-works > ul > li {
+    margin-bottom: 30px;
+    width: 50%;
+}
+.how-app-works > ul > li:nth-child(2n+2)::before {
+    display: none;
+}
+.feature-button > ul.features-nav {
+    padding: 0;
+}
+.features-nav li > a {
+    font-size: 15px;
+}
+.feature-product > h3 {
+    font-size: 20px;
+    line-height: 40px;
+}
+.feature-product > p {
+    padding: 0;
+}
+.feature-product > img {
+    float: left;
+    width: 100%;
+}
+.price-area > i {
+    font-size: 50px;
+    left: 40px;
+}
+.testimonials {
+    padding: 30px 20px;
+}
+.title-sec > h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin: -9px 0 5px;
+    width: 100%;
+}
+.blog-info > h2 {
+    font-size: 22px;
+    line-height: 37px;
+}
+.wanna-touch {
+    padding: 0;
+    width: 100%;
+}
+.wanna-touch-inner {
+    padding: 0;
+}
+.contact-info-list > ul > li {
+    margin: 5px 0;
+    width: 100%;
+}
+.info-title {
+    margin-bottom: 20px;
+}
+.menu > nav {
+    right: 15px;
+}
+.form-spot {
+    padding: 40px 30px;
+    width: 100%;
+}
+.video-app-sec > h3 {
+    font-size: 35px;
+    letter-spacing: 12px;
+}
+.video-app-sec > p {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0;
+}
+.video-app-sec > img {
+    margin-bottom: 80px;
+}
+.countdown > li > span {
+    font-size: 25px;
+}
+.countdown > li > p {
+    font-size: 14px;
+    margin: 0;
+}
+.countdown > li {
+    padding: 0 8px;
+}
+.app-soon-sec h1 {
+    font-size: 30px;
+    margin: 15px 0 0;
+    width: 100%;
+}
+.countdown {
+    margin: 30px 0 0;
+}
+
+.kenburns.kenburning-container {
+    float: left;
+    width: 100%;
+    position: static;
+}
+.home-style1.kenburns-sec {
+    float: left;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    background: #232323;
+    padding: 50px 30px;
+    margin-top: 60px;
+}
+.client-sec > .row > div {
+    width: 100%;
+}
+.error-sec h2 {
+    font-size: 162px;
+    letter-spacing: -4px;
+}
+.error-sec > i {
+    font-size: 63px;
+}
+.faqs-accordian-sec {
+    float: left;
+    width: 100%;
+}
+.faqs-accordian-sec > div {
+    float: left;
+    padding: 0;
+    width: 100%;
+}
+#toggle-widget > h2 {
+    font-size: 15px;
+    margin: 0 0 -1px;
+    padding: 20px 25px;
+}
+.countdown-sec > ul > li {
+    padding-left: 15px !important;
+}
+.countdown-sec > ul > li > span {
+    font-size: 25px;
+}
+.countdown-sec li p {
+    font-size: 9px;
+    margin: -18px 0 0;
+}
+.countdown-sec > ul {
+    padding: 0 20px;
+    width: 100%;
+}
+.countdown-sec > ul > li {
+    width: 25%;
+}
+.coming-sson-sec h2 {
+    font-size: 37px;
+}
+.inner-header h1 {
+    font-size: 30px;
+    line-height: 40px;
+}
+blockquote {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+blockquote p {
+    font-size: 18px;
+    line-height: 30px;
+}
+.gallery-single > #dylay img {
+    width: 100%;
+}
+.post-tags {
+    line-height: 26px;
+}
+.text-block-video > h3 {
+    font-size: 27px;
+    line-height: 40px;
+}
+.subscribe-us > form > input[type="text"] {
+    width: 285px;
+}
+
+
+}

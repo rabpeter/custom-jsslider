@@ -1,0 +1,43 @@
+/* -------------------------------------------
+
+	Name: 		Violin
+	Date:		2016/10/24
+	Author:		http://psdhtml.me
+
+--------------------------------------------- */
+a,
+#footer ul a:hover,
+#top ul a:hover,
+.overlay-a,
+.list-a a:before,
+.image-b:before {
+    color: #00bf99;
+}
+.about .image-frame .dot,
+.intro-wide .dot,
+.loading > * > .a,
+.miziajs > .frame,
+.news figure:before,
+.project-header:after,
+.totop,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.link-b a,
+.form-a .success > .frame.a {
+    background-color: #00bf99;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.link-b a {
+    border-color: #00bf99;
+}
+::selection {
+    background: #00bf99;
+}
+::-moz-selection {
+    background: #00bf99;
+}

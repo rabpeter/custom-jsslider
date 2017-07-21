@@ -1,0 +1,10 @@
+//FOOTER AREA
+#footer{padding-top: 40px; padding-bottom: 23px;background-color: $maincolor;font-weight: 400;}
+.footer-rights{font-size: 11px; color: white;margin-bottom: 10px; height: 20px; line-height: 20px;}
+.footer-cag{float: right; height: 20px; line-height: 20px;
+    img{height: 15px;}
+}
+@media only screen and (max-width: 992px) {
+    .footer-cag{float: none; text-align: center;}
+    .footer-rights{text-align: center;}
+}

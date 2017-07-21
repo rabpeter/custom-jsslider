@@ -1,0 +1,247 @@
+/* -------------------------------------------
+
+	Name: 		Violin (print)
+	Date:		2016/10/24
+	Author:		http://psdhtml.me
+		   		   
+---------------------------------------------  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+@page {
+    margin: .5cm;
+}
+html {
+    font-size: 100.01%;
+}
+body {
+    background: #fff;
+    font-size: 60%;
+}
+body,
+textarea,
+input,
+select,
+option,
+button {
+    color: #000;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+}
+li,
+dt,
+dd,
+p,
+figure,
+th,
+td,
+caption,
+pre,
+legend {
+    font-size: 1.5em;
+}
+/*---*/
+
+li *,
+li li,
+dt *,
+dd *,
+p *,
+figure *,
+th *,
+td *,
+legend * {
+    font-size: 1em;
+}
+ul,
+ol,
+dl,
+p,
+figure,
+table,
+pre,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend {
+    margin-bottom: 1em;
+}
+article,
+aside,
+div,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+    margin-bottom: 2em;
+}
+/*! Layout --------- */
+
+#top {
+    margin: 0 0 1em;
+    padding: 0 0 0.5em;
+    border-bottom: 1px solid #ccc;
+}
+#logo a {
+    color: #000;
+    text-decoration: none;
+}
+#content {} #content a:after {
+    content: " (" attr(href) ") ";
+    color: #555;
+    font-size: 0.8em;
+    font-style: italic;
+}
+#content a[href^="#"]:after {
+    content: "";
+}
+#footer {
+    margin: 1em 0 0;
+    padding: 1em 0 0;
+    border-top: 1px solid #ccc;
+}
+/*! Columns --------- */
+/*! Modules --------- */
+
+.image-frame {
+    max-width: 45%;
+}
+.intro {} .intro > span {
+    display: block;
+    font-size: .55em;
+    font-weight: 700;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+.intro-wide {
+    min-height: 0 !important;
+}
+.news-a {} .news-a article {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 2em;
+}
+.news-a figure {
+    float: left;
+    max-width: 50%;
+    margin: 0 1em 1em 0;
+    background-position: -3000em -3000em;
+}
+/*! Defaults --------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#logo {
+    margin: 1.25em 0 0.5em;
+    color: #000;
+    font-weight: 700;
+    font-family: Cambria, Georgia, serif;
+}
+h2,
+h3 {
+    page-break-after: avoid;
+}
+h1,
+#logo {
+    margin-top: 0;
+    font-size: 2.4em;
+}
+h2 {
+    font-size: 2.0em;
+}
+h3 {
+    font-size: 1.8em;
+}
+h4 {
+    font-size: 1.6em;
+}
+h5 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+h6 {
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+p,
+h2,
+h3 {
+    orphans: 3;
+    widows: 3;
+}
+a {
+    color: #09f;
+    text-decoration: underline;
+}
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    border-width: 0;
+    image-rendering: optimizeQuality;
+    -ms-interpolation-mode: bicubic;
+}
+tr,
+img {
+    page-break-inside: avoid;
+}
+ul,
+ol,
+dd,
+blockquote {
+    padding-left: 2em;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+    margin-bottom: 0;
+}
+table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table th,
+table td {
+    padding: 0.3em 0.6em;
+    border: 1px solid #ccc;
+}
+/*! Hiding --------- */
+
+#skip,
+nav,
+form,
+[class*="link"],
+[class*="icon"],
+[class*="social"],
+.intro .date,
+#top ul,
+#footer ul,
+.background-a > .background,
+a.clone,
+.list-a,
+.totop,
+.intro,
+.intro-wide,
+.form-a + figure,
+header > p:first-child,
+p.mobile-only.print-hidden:last-child {
+    position: absolute;
+    left: -3000em;
+    top: -3000em;
+}

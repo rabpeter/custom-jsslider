@@ -1,0 +1,63 @@
+/** Background Color **/
+.bg-color,
+.menu > a,
+.download-main-btns > li > a.android-btn,
+.services > h3::before,
+.how-app-works > ul > li.active > i,
+.features-nav li > a::before,
+.app-step,
+.price-table.active .price-button a,
+.slick-dots > li.slick-active button,
+.team-image > i,
+.my-skills > .progress > .progress-bar,
+.theme-btn,
+.social-btns > li a::before,
+.menu > nav > ul > li a::before,
+.menu > nav > ul > li a::after,
+.price-table:hover .price-button a,
+.hide-location,
+.view-location:hover,
+.pagination li.active a, 
+.pagination li a:hover,
+.faq-form button,
+#toggle-widget > h2.active,
+.error-btn > li.fill > a    
+{
+    background-color: #5d0eff;
+}
+
+
+/** Text Color **/
+.text-color,
+.logo > a > i,
+.download-main-btns > li > a.iphone-btn > i,
+.text-block-video > a,
+.about-product-detail > ul > li > i,
+.title-sec > i,
+.blog-info > a,
+.blog-info > p a,
+.contact-info-list > ul > li i,
+.contact-infos > ul > li > span > i,
+.services:hover > i,
+.fun-fact:hover > i,
+.video-app-sec > i,
+blockquote span a,
+.post-tags > span i,
+.error-sec > i,
+.error-btn > li.border > a,
+.countdown-sec > ul > li > span
+{
+    color: #5d0eff;
+}
+
+/** Border Color **/
+.border-color,
+.features-nav li.slick-slide.slick-active.slick-center > a,
+.price-table.active,
+.team-image > i:after,
+#toggle-widget > h2.active,
+.error-btn > li.border > a,
+.error-btn > li.fill > a 
+{
+    border-color: #5d0eff;
+}

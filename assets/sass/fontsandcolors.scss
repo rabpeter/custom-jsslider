@@ -1,0 +1,22 @@
+$font-1: 'Josefin Sans', sans-serif;
+$font-2: 'Chivo', sans-serif;
+
+$maincolor: #001843;
+$maincolortransparent: rgba(0, 24, 66, 0.8);
+$mainheaderfontcolor:rgba(122, 122, 125, 1);
+$etablue: #13216a; 
+$etagray: #e0e0e0;
+$color1: #aa8a57;
+@mixin animation-timing($timing) {
+-webkit-transition: $timing; 
+-moz-transition: $timing; 
+-ms-transition: $timing; 
+-o-transition: $timing; 
+transition: $timing;
+}
+
+@mixin gray-this($amount) {
+-webkit-filter: grayscale($amount * 100%);
+filter: grayscale($amount * 100%);
+filter: grayscale($amount);
+}
