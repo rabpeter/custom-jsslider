@@ -9,11 +9,210 @@ body {
   font-family: "Montserrat", sans-serif !important;
   width: 100%; }
 
+/* .scroll-down {
+  z-index: 9999;
+  left: 50%;
+  top: 83%;
+  box-sizing: border-box;
+  position: absolute;
+  text-align: center;  
+  border-radius: 100%;
+}
+
+.scroll-down a {
+  padding-top: 60px;
+}
+.scroll-down a span:hover {
+  background: #E2336E;
+}
+.scroll-down a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+.scroll-down a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+.scroll-down a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb03 3s infinite;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+} */
+
+.scroll-down {
+  z-index: 9999;
+  left: 50%;
+  top: 83%;
+  box-sizing: border-box;
+  position: absolute;
+  text-align: center;  
+  border-radius: 100%;
+}
+.scroll-down a {
+  padding-top: 60px;
+}
+.scroll-down a span:hover {
+  background: #E2336E;
+}
+.scroll-down a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+.scroll-down a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+/* .scroll-down {
+  z-index: 9999;
+  left: 50%;
+  top: 83%;
+  box-sizing: border-box;
+  position: absolute;
+  text-align: center;  
+  border-radius: 100%;
+}
+
+.scroll-down a {
+  padding-top: 60px;
+}
+.scroll-down a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+.scroll-down a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% { 
+    opacity: 0;
+  }
+}
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}  */
+
 .body-screencap {
   height: 100vh !important;
   overflow: hidden; }
 
 @media only screen and (max-width: 768px) {
+
   .showcase-place {
     font-size: 36px !important; } }
 #header {
@@ -286,7 +485,12 @@ body {
     height: 70px; }
     .header-logo-area img {
       max-height: 100%;
-      max-width: 100%; } }
+      max-width: 100%; }
+    .header-template {
+      margin-top: 45px;
+      right: 10%;
+    }    
+  }
 @media only screen and (min-width: 992px) {
   .header-logo-area {
     width: 100%;
@@ -295,6 +499,12 @@ body {
     .header-logo-area img {
       max-height: 100%;
       max-width: 100%; }
+    .header-template {
+      margin-top: 65px;
+      right: 5%;
+    }
+
+    
 
   .header-menu ul li a:hover:before {
     width: 80%;
@@ -2032,6 +2242,7 @@ body {
   height: 300px; 
   padding: 4px;
 }
+
 
 
 @-webkit-keyframes btn-gradient-animation {

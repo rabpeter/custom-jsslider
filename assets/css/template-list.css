@@ -1,0 +1,225 @@
+.template {
+  position: fixed;
+  top: 0px;
+  background-color: rgba(0, 24, 66, 0.9);
+  overflow: hidden;
+  max-height: 100vh;
+  z-index: 6;
+  height: 100vh;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+
+}
+#close-template {
+  float: right; 
+  margin-top: 30px; 
+  font-size: 30px; 
+  color: white; 
+  text-align: center; 
+  margin-right: 40px;
+}
+.template-closed {
+  max-height: 0px !important;
+}
+.header-template {
+  float: right; 
+  position: fixed; 
+  background: white; 
+  z-index: 4; 
+  width: 200px; 
+  height: 40px;
+  border-bottom-left-radius: 3em; 
+  border-bottom-right-radius: 3em; 
+  margin-top: 0px; border-top: none; 
+  background: -moz-linear-gradient(45deg, #F17C35 0%, #E2336E 44%, #E2336E 56%, #F17C35 100%);
+  background: -webkit-linear-gradient(45deg, #F17C35 0%, #E2336E 44%, #E2336E 56%, #F17C35 100%);
+  background: linear-gradient(45deg, #F17C35 0%, #E2336E 44%, #E2336E 56%, #F17C35 100%);
+}
+.header-template-toggle {
+  position: absolute; 
+  margin-left: 20%; 
+  margin-top: 5%; 
+  text-align: center;
+}
+
+#toggle-template {
+  text-decoration: none; 
+  margin-left: 5px;  
+  color: white; 
+  text-align: center; 
+} 
+
+#toggle-template  i {
+  color: white;
+}
+.template-list {
+  width: 100%;
+  position: absolute;
+  margin-top: 20%;
+  padding-top: 5%;
+  padding-right: 5%;  
+}
+
+.template-item {
+  width: 45%; 
+  height: 25%;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  float: right;
+  position: relative;
+  text-align: center;
+}
+
+.template-item img {
+  width: 100%;
+  height: 100%;
+}
+.template-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.template-item:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+.template-item .title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 40%;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+.template-item:hover .title {
+  top: 20%;
+}
+.template-item .button {
+  position: absolute;
+  width: 100%;
+  left:0;
+  top: 60%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+.template-item .button a {
+  width: 50%;
+  padding: 3% 10%;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  text-decoration: none;
+  z-index: 1;
+}
+.template-item:hover .button {
+  opacity: 1;
+}
+@media only screen and (min-width : 320px) {
+  .template-item {
+    width: 40%;
+    height: 30%;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+  .template-item {
+    width: 45%;
+    height: 30%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+  .template {
+    width: 100%;
+    left: 0%;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .template {
+    width: 30%;
+    left: 70%;
+  }
+  .template-item {
+    width: 40%;
+    height: 30%;
+  }
+  .template-item .button a {
+    font-size: 10px;
+  }
+}
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .template {
+    width: 100%;
+    left: 0%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .template-item {
+    width: 40%;
+    height: 30%;
+  }
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+  .template-item .title {
+    font-size: 10px;
+  }
+  .template-item .button a {
+    font-size: 10px;
+  }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+  
+}
+
+
+/*add style to iframe of each template*/
+
+#iframe-showcase {
+  display: none;
+}
+
+iframe.active {
+  display: block !important;
+}
