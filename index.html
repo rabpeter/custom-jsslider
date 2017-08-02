@@ -14,1324 +14,237 @@
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox-thumbs.css">
     <link rel="stylesheet" type="text/css" href="assets/css/google-fonts.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/tooltip.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/template-list.css">
 </head>
 
 <body>
-<div id="fixedbg" style="background-image: url('http://placehold.it/1920x1080');"></div>
-<div id="header">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-2 col-sm-3 col-xs-6">
-                <div class="header-logo-area">
-                    <img src="assets/images/logocagevent.svg" alt="Site Logo"/>
-                </div>
+    <div class="header-template">
+        <div class="header-template-toggle">
+            <a href="javascript:void(0)" id="toggle-template" title="TEMPLATES"><i class="fa fa-th"></i> TEMPLATES</a>
+        </div>
+    </div>
+    <div id="template" class="template template-closed">
+        <a href="javascript:void(0)" id="close-template"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <div class="template-list">
+            <div class="template-item">
+                  <img src="assets/images/os.png" alt="" />
+                  <p class="title">OS</p>
+                  <div class="overlay"></div>
+                  <div class="button"><a href="#" class="template-link" data-template="os"> BUTTON </a></div>
             </div>
-            <div class="column col-md-10 col-sm-9 col-xs-6">
-                <div class="header-menu hidden-sm hidden-xs">
-                    <ul>
-                        <li><a href="#showcase" title="HOMEPAGE" class="header-menu-item" id="header-menu-item-1">HOMEPAGE</a></li>
-                        <li><a href="#goldsponsors" title="SPONSORS" class="header-menu-item" id="header-menu-item-2">SPONSORS</a></li>
-                        <li><a href="#calendar" title="CALENDAR" class="header-menu-item" id="header-menu-item-3">CALENDAR</a></li>
-                        <li><a href="#speakers" title="SPEAKERS" class="header-menu-item" id="header-menu-item-4">SPEAKERS</a></li>
-                        <li><a href="#latestnews" title="NEWS" class="header-menu-item" id="header-menu-item-5">NEWS</a></li>
-                        <li><a href="#venueinfo-top" title="VENUE INFORMATION" class="header-menu-item" id="header-menu-item-6">VENUE INFORMATION</a></li>
-                        <li><a href="#contact-top" title="CONTACT" class="header-menu-item" id="header-menu-item-7">CONTACT</a></li>
-                    </ul>
-                </div>
-                <div id="header-menu-area" class="hidden-md hidden-lg">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <a href="javascript:void(0)" title="MENU"></a>
-                </div>
+            <div class="template-item">
+                  <img src="assets/images/home.png" alt="" />
+                  <p class="title">HOME</p>
+                  <div class="overlay"></div>
+                  <div class="button"><a href="#" class="template-link" data-template="home"> BUTTON </a></div>
+            </div>
+            <div class="template-item">
+                  <img src="assets/images/rcs.png" alt="" />
+                  <p class="title">RCS</p>
+                  <div class="overlay"></div>
+                  <div class="button"><a href="#" class="template-link" data-template="rcs">BUTTON</a></div>
+            </div>
+            <div class="template-item">
+                  <img src="assets/images/rio.png" alt="" />
+                  <p class="title">RIO</p>
+                  <div class="overlay"></div>
+                  <div class="button"><a href="#" class="template-link" data-template="rio"> BUTTON </a></div>
+            </div>
+            <div class="template-item">
+                  <img src="assets/images/template-item.png" alt="" />
+                  <p class="title">card title</p>
+                  <div class="overlay"></div>
+                  <div class="button"><a href="#"> BUTTON </a></div>
+            </div>
+            <div class="template-item">
+                  <img src="assets/images/template-item.png" alt="" />
+                  <p class="title">card title</p>
+                  <div class="overlay"></div>
+                  <div class="button"><a href="#"> BUTTON </a></div>
             </div>
         </div>
     </div>
-</div>
-<div class="hidden-md hidden-lg header-submenu-closed" id="responsive-menu-area">
-    <div id="responsive-menu" class="sub-hidden">
-        <ul>
-            <li><a href="#showcase" title="HOMEPAGE" id="responsive-menu-item-1" class="responsive-menu-item">HOMEPAGE</a></li>
-            <li><a href="#goldsponsors" title="SPONSORS" id="responsive-menu-item-2" class="responsive-menu-item">SPONSORS</a></li>
-            <li><a href="#calendar" title="CALENDAR" id="responsive-menu-item-3" class="responsive-menu-item">CALENDAR</a></li>
-            <li><a href="#speakers" title="SPEAKERS" id="responsive-menu-item-4" class="responsive-menu-item">SPEAKERS</a></li>
-            <li><a href="#latestnews" title="NEWS" id="responsive-menu-item-5" class="responsive-menu-item">NEWS</a></li>
-            <li><a href="#venueinfo-top" title="VENUE INFORMATION" id="responsive-menu-item-6" class="responsive-menu-item">VENUE INFORMATION</a></li>
-            <li><a href="#contact-top" title="CONTACT" id="responsive-menu-item-7" class="responsive-menu-item">CONTACT</a></li>
-        </ul>
-    </div>
-</div>
-<div class="container-fluid" id="showcase">
-    <div class="showcase-item showcase-current" id="showcase-1" style="background-image: url('http://placehold.it/1920x1080')">
-        <div class="showcase-filter-area"></div>
+    <div id="header">
         <div class="container">
             <div class="row">
-                <div class="column col-md-1 col-sm-1 hidden-xs"></div>
-                <div class="column col-md-11 col-sm-11 col-xs-12">
-                    <div class="showcase-city">London</div>
-                    <div class="showcase-place">WESTMINSTER<br>ABBEY</div>
-                    <div class="showcase-detail"><a href="https://en.wikipedia.org/wiki/Westminster_Abbey" title="DETAIL" target="_blank">DETAIL</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="showcase-item showcase-right" id="showcase-2" style="background-image: url('http://placehold.it/1920x1080')">
-        <div class="showcase-filter-area"></div>
-        <div class="container">
-            <div class="row">
-                <div class="column col-md-1 col-sm-1 hidden-xs"></div>
-                <div class="column col-md-11 col-sm-11 col-xs-12">
-                    <div class="showcase-city">London</div>
-                    <div class="showcase-place">TOWER<br>BRIDGE</div>
-                    <div class="showcase-detail"><a href="https://en.wikipedia.org/wiki/Tower_Bridge" title="DETAIL" target="_blank">DETAIL</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="showcase-item showcase-right" id="showcase-3" style="background-image: url('http://placehold.it/1920x1080')">
-        <div class="showcase-filter-area"></div>
-        <div class="container">
-            <div class="row">
-                <div class="column col-md-1 col-sm-1 hidden-xs"></div>
-                <div class="column col-md-11 col-sm-11 col-xs-12">
-                    <div class="showcase-city">London</div>
-                    <div class="showcase-place">BIG<br>BEN</div>
-                    <div class="showcase-detail"><a href="https://en.wikipedia.org/wiki/Big_Ben" title="DETAIL" target="_blank">DETAIL</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="showcase-item showcase-right" id="showcase-4" style="background-image: url('http://placehold.it/1920x1080')">
-        <div class="showcase-filter-area"></div>
-        <div class="container">
-            <div class="row">
-                <div class="column col-md-1 col-sm-1 hidden-xs"></div>
-                <div class="column col-md-11 col-sm-11 col-xs-12">
-                    <div class="showcase-city">London</div>
-                    <div class="showcase-place">BUCKINGHAM<br>PALACE</div>
-                    <div class="showcase-detail"><a href="https://en.wikipedia.org/wiki/Buckingham_Palace" title="DETAIL" target="_blank">DETAIL</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-12">
-                <div class="showcase-save">
-                    <img src="assets/images/savethedate.svg" alt="Save The Date" />
-                    <div class="showcase-save-left">
-                        <div id="savethedate-year">'17</div>
-                        <div id="savethedate-buy"><a href="javascript:void(0)" title="BUY TICKET">BUY<br>TICKET</a></div>
-                    </div>
-                    <div class="showcase-save-right">
-                        <div id="savethedate-day">31st</div>
-                        <div id="savethedate-month">December</div>
-                        <div id="savethedate-save">save</div>
-                        <div id="savethedate-thedate"><span>the</span>date</div>
+                <div class="column col-md-2 col-sm-3 col-xs-6">
+                    <div class="header-logo-area">
+                        <img src="assets/images/logocagevent.svg" alt="Site Logo" />
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-   <div class="showcase-left-arrow hidden-xs" id="showcaseleftarrow">
-        <a href="javascript:void(0)" title="Showcase Previous"><img src="assets/images/showcase-arrow-left.png" alt="Arrow Left"/></a>
-    </div>
-    <div class="showcase-right-arrow hidden-xs" id="showcaserightarrow">
-        <a href="javascript:void(0)" title="Showcase Next"><img src="assets/images/showcase-arrow-right.png" alt="Arrow Right"/></a>
-    </div>
-    <div class="showcase-pagination">
-        <div class="showcase-pagination-circle"><a href="javascript:void(0)" title="Showcase 1" id="showcase-pagination-1" class="showcase-pagination-circle-item pagination-show"></a></div>
-        <div class="showcase-pagination-circle"><a href="javascript:void(0)" title="Showcase 2" id="showcase-pagination-2" class="showcase-pagination-circle-item"></a></div>
-        <div class="showcase-pagination-circle"><a href="javascript:void(0)" title="Showcase 3" id="showcase-pagination-3" class="showcase-pagination-circle-item"></a></div>
-        <div class="showcase-pagination-circle"><a href="javascript:void(0)" title="Showcase 4" id="showcase-pagination-4" class="showcase-pagination-circle-item"></a></div>
-    </div>
-</div>
-<div class="container-fluid" id="timetoevent">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-1 hidden-xs hidden-xs"></div>
-            <div class="column col-md-11 col-sm-12 col-xs-12">
-                <div class="timetoevent-header-area">
-                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-                    <h2>TIME TO EVENT</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs timetoevent-column"></div>
-            <div class="column col-md-1 col-sm-5 col-xs-12 timetoevent-column">
-                <div class="timetoevent-amount" id="tte-month">&nbsp;</div>
-                <div class="timetoevent-timespan">Weeks</div>
-            </div>
-            <div class="column col-md-2 col-sm-2 hidden-xs timetoevent-column"><div class="timetoevent-slash">/</div></div>
-            <div class="column col-md-1 col-sm-5 col-xs-12 timetoevent-column"><div class="timetoevent-amount" id="tte-day">&nbsp;</div><div class="timetoevent-timespan">Day</div></div>
-            <div class="column col-md-2 hidden-sm hidden-xs timetoevent-column"><div class="timetoevent-slash">/</div></div>
-            <div class="column col-md-1 col-sm-5 col-xs-12 timetoevent-column"><div class="timetoevent-amount" id="tte-hour">&nbsp;</div><div class="timetoevent-timespan">Hour</div></div>
-            <div class="column col-md-2 col-sm-2 hidden-xs timetoevent-column"><div class="timetoevent-slash">/</div></div>
-            <div class="column col-md-1 col-sm-5 col-xs-12 timetoevent-column"><div class="timetoevent-amount" id="tte-minute">&nbsp;</div><div class="timetoevent-timespan">Minute</div></div>
-            <div class="column col-md-1 hidden-sm hidden-xs timetoevent-column"></div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid" id="aboutevent">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
-                <div class="becomesponsor-header">
-                    <i class="fa fa-book" aria-hidden="true"></i>
-                    <h2>ABOUT EVENT</h2>
-                </div>
-                    <div class="becomesponsor-writing">
-                        <p>Join Our Event</p>
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie molestie tristique. Nunc luctus laoreet tortor luctus condimentum. Donec vitae efficitur est, non tempor velit. Nam vel tellus rutrum, vestibulum velit imperdiet, sagittis tortor. Integer ultrices finibus eros at vulputate. Mauris fringilla, nibh sit amet blandit scelerisque, sapien felis lacinia metus, tincidunt varius tellus justo in nunc. Vestibulum nec interdum neque, ac gravida elit. Suspendisse mollis, eros in sollicitudin cursus, libero libero interdum metus, ut pharetra justo libero id dui. Etiam finibus tempus justo sit amet cursus. Quisque dapibus fringilla neque, sit amet bibendum magna condimentum ac. Integer molestie commodo scelerisque. Fusce placerat semper nibh vel vestibulum. Maecenas semper scelerisque nisi, in pretium erat lacinia id.</p>
+                <div class="column col-md-9 col-sm-8 col-xs-4">
+                    <div class="header-menu hidden-sm hidden-xs">
+                        <ul>
+                            <li><a href="#showcase" title="HOMEPAGE" class="header-menu-item" id="header-menu-item-1">HOMEPAGE</a></li>
+                            <li><a href="#goldsponsors" title="SPONSORS" class="header-menu-item" id="header-menu-item-2">SPONSORS</a></li>
+                            <li><a href="#calendar" title="CALENDAR" class="header-menu-item" id="header-menu-item-3">CALENDAR</a></li>
+                            <li><a href="#speakers" title="SPEAKERS" class="header-menu-item" id="header-menu-item-4">SPEAKERS</a></li>
+                            <li><a href="#latestnews" title="NEWS" class="header-menu-item" id="header-menu-item-5">NEWS</a></li>
+                            <li><a href="#venueinfo-top" title="VENUE INFORMATION" class="header-menu-item" id="header-menu-item-6">VENUE INFORMATION</a></li>
+                            <li><a href="#contact-top" title="CONTACT" class="header-menu-item" id="header-menu-item-7">CONTACT</a></li>
+                        </ul>
                     </div>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid sponsorcontainer" id="goldsponsor">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
-                <div class="goldsponsor-header-left">
-                    <div class="goldsponsor-header-1">GOLD</div>
-                    <div class="goldsponsor-header-2">Sponsor</div>
-                </div>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-        </div>
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
-                <div class="goldsponsor-showarea">
-                    <div class="row">
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid sponsorcontainer" id="silversponsor">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
-                <div class="goldsponsor-header-left">
-                    <div class="goldsponsor-header-1">SILVER</div>
-                    <div class="goldsponsor-header-2">Sponsor</div>
-                </div>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-        </div>
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
-                <div class="goldsponsor-showarea">
-                    <div class="row">
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid sponsorcontainer" id="bronzesponsor">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
-                <div class="goldsponsor-header-left">
-                    <div class="goldsponsor-header-1">BRONZE</div>
-                    <div class="goldsponsor-header-2">Sponsor</div>
-                </div>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-        </div>
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
-                <div class="goldsponsor-showarea">
-                    <div class="row">
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid sponsorcontainer" id="promotionsponsor">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
-                <div class="goldsponsor-header-left">
-                    <div class="goldsponsor-header-1">PROMOTION</div>
-                    <div class="goldsponsor-header-2">Sponsor</div>
-                </div>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-        </div>
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
-                <div class="goldsponsor-showarea">
-                    <div class="row">
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column col-md-2 col-sm-4 col-xs-6">
-                            <div class="goldsponsor-show">
-                                <a href="https://market.envato.com/" title="Envato Market" target="_blank">
-                                    <img src="http://placehold.it/320x120" alt="Envato Logo"/>
-                                    <div class="link-visited">
-                                        <i class="fa fa-link" aria-hidden="true"></i><br>VISIT
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid" id="becomesponsor">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
-                <div class="becomesponsor-header">
-                    <i class="fa fa-briefcase" aria-hidden="true"></i>
-                    <h2>BECOME SPONSOR</h2>
-                </div>
-                    <div class="becomesponsor-writing">
-                        <p>Your Support Makes us Stronger!</p>
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie molestie tristique. Nunc luctus laoreet tortor luctus condimentum. Donec vitae efficitur est, non tempor velit. Nam vel tellus rutrum, vestibulum velit imperdiet, sagittis tortor. Integer ultrices finibus eros at vulputate. Mauris fringilla, nibh sit amet blandit scelerisque, sapien felis lacinia metus, tincidunt varius tellus justo in nunc. Vestibulum nec interdum neque, ac gravida elit. Suspendisse mollis, eros in sollicitudin cursus, libero libero interdum metus, ut pharetra justo libero id dui. Etiam finibus tempus justo sit amet cursus. Quisque dapibus fringilla neque, sit amet bibendum magna condimentum ac. Integer molestie commodo scelerisque. Fusce placerat semper nibh vel vestibulum. Maecenas semper scelerisque nisi, in pretium erat lacinia id.</p>
-
-                        <p>Sed molestie, magna quis venenatis fringilla, nisi urna pulvinar neque, vitae pharetra magna quam eget metus. Nunc consequat volutpat efficitur. Cras egestas eget dolor non posuere. Aliquam feugiat magna sit amet mi aliquet bibendum. Mauris malesuada metus et sapien convallis molestie. Pellentesque eleifend nisl at sem fermentum euismod. Proin volutpat enim nec odio porttitor semper. Vivamus scelerisque lacinia diam, mollis lacinia elit luctus nec. Phasellus facilisis rhoncus condimentum. Vestibulum et tempor augue. Morbi in odio urna. Aliquam erat volutpat. Fusce vel vehicula quam, sed auctor urna. Duis porta porta nibh, nec lacinia libero molestie pellentesque.</p>
-                    </div>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-        </div>
-        <div class="row">
-            <div class="column col-md-3 col-sm-6 col-xs-12">
-                <div class="becomesponsor-box">
-                    <a id="various1" href="javascript:void(0)" title="GOLD SPONSOR">
-                    <div class="becomesponsor-header-1">GOLD</div>
-                    <div class="becomesponsor-header-2">SPONSOR</div>
-                    <div class="becomesponsor-link">Learn More<i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-                    </a>
-                </div>
-            </div>
-            <div class="column col-md-3 col-sm-6 col-xs-12">
-                <div class="becomesponsor-box">
-                    <a id="various2" href="javascript:void(0)" title="SILVER SPONSOR">
-                    <div class="becomesponsor-header-1">SILVER</div>
-                    <div class="becomesponsor-header-2">SPONSOR</div>
-                    <div class="becomesponsor-link">Learn More<i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-                    </a>
-                </div>
-            </div>
-            <div class="column col-md-3 col-sm-6 col-xs-12">
-                <div class="becomesponsor-box">
-                    <a id="various3" href="javascript:void(0)" title="BRONZE SPONSOR">
-                    <div class="becomesponsor-header-1">BRONZE</div>
-                    <div class="becomesponsor-header-2">SPONSOR</div>
-                    <div class="becomesponsor-link">Learn More<i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-                    </a>
-                </div>
-            </div>
-            <div class="column col-md-3 col-sm-6 col-xs-12">
-                <div class="becomesponsor-box">
-                    <a id="various4" href="javascript:void(0)" title="PROMOTION SPONSOR">
-                    <div class="becomesponsor-header-1">PROMOTION</div>
-                    <div class="becomesponsor-header-2">SPONSOR</div>
-                    <div class="becomesponsor-link">Learn More<i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid" id="becomesponsor-bg-box-area">
-   <div class="container">
-        <div class="row">
-            <div class="column col-md-12 col-sm-12 col-xs-12">
-                <div class="becomesponsor-close">
-                    <div class="home-inner-box-writing-area-close">
-                        <a href="javascript:void(0)" title="CLOSE" id="home-inner-box-writing-area-close-button"></a>
+                    <div id="header-menu-area" class="hidden-md hidden-lg">
                         <ul>
                             <li></li>
                             <li></li>
                             <li></li>
                         </ul>
+                        <a href="javascript:void(0)" title="MENU"></a>
                     </div>
                 </div>
             </div>
         </div>
-       <div class="row">
-           <div class="column col-md-8 col-sm-12 col-xs-12">
-               <div class="becomesponsor-bg-box-area-inner">
-                    <div class="becomesponsor-bg-box-area-item" id="becomesponsor-item-1">
-                        <div class="becomesponsor-bg-box-area-item-writing">
-                            Sponsor Contribution &euro; 15.000 + VAT<br> 
-                            The following amenities will be provided to each Gold Sponsor:<br>
-                            <ul>
-                            <li>20 invitations to the dinner.</li>
-                            <li>Its logo will be printed on visual materials, handouts and leaflets.</li>
-                            <li>Its logo and a link to its website will be inserted in the CAG EVENT 2017 website.</li>
-                            <li>A plaque will be presented to each Gold Sponsor.</li>
-                            <li>There will be only twenty-five (5) Gold Sponsors.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="becomesponsor-bg-box-area-item" id="becomesponsor-item-2">
-                        <div class="becomesponsor-bg-box-area-item-writing">
-                            Sponsor Contribution &euro; 10.000 + VAT<br> 
-                            The following amenities will be provided to each Silver Sponsor:<br>
-                            <ul>
-                            <li>15 invitations to the dinner.</li>
-                            <li>Its logo and a link to its website will be inserted in the CAG EVENT 2017 website.</li>
-                            <li>A plaque will be presented to each Silver Sponsor.</li>
-                            <li>There will be only twenty-five (10) Silver Sponsors.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="becomesponsor-bg-box-area-item" id="becomesponsor-item-3">
-                        <div class="becomesponsor-bg-box-area-item-writing">
-                            Sponsor Contribution &euro; 5.000 + VAT<br> 
-                            The following amenities will be provided to each Bronze Sponsor:<br>
-                            <ul>
-                            <li>6 invitations to the dinner.</li>
-                            <li>Its logo and a link to its website will be inserted in the CAG EVENT 2017 website.</li>
-                            <li>A plaque will be presented to each Bronze Sponsor.</li>
-                            <li>There will be only twenty-five (25) Bronze Sponsors.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="becomesponsor-bg-box-area-item" id="becomesponsor-item-4">
-                        <div class="becomesponsor-bg-box-area-item-writing">
-                            Sponsor Contribution &euro; 2.000 + VAT<br> 
-                            The following amenities will be provided to each Promotion Sponsor:<br>
-                            <ul>
-                            <li>2 invitation to the dinner.</li>
-                            <li>Its logo and a link to its website will be inserted in the CAG EVENT 2017 website.</li>
-                            </ul>
-                        </div>
-                    </div>
-               </div>
-           </div>
-           <div class="column col-md-4 col-sm-12 col-xs-12">
-               <div class="becomesponsor-bg-box-area-menu">
-                   <ul>
-                       <li><a href="javascript:void(0)" title="GOLD SPONSOR" class="becomesponsor-bg-box-area-menu-item" id="bbbami-1">GOLD SPONSORSHIP</a></li>
-                       <li><a href="javascript:void(0)" title="SILVER SPONSOR" class="becomesponsor-bg-box-area-menu-item" id="bbbami-2">SILVER SPONSORSHIP</a></li>
-                       <li><a href="javascript:void(0)" title="BRONZE SPONSOR" class="becomesponsor-bg-box-area-menu-item" id="bbbami-3">BRONZE SPONSORSHIP</a></li>
-                       <li><a href="javascript:void(0)" title="PROMOTION SPONSOR" class="becomesponsor-bg-box-area-menu-item" id="bbbami-4">PROMOTION SPONSORSHIP</a></li>
-                   </ul>
-               </div>
-           </div>
-       </div>
-   </div>  
-</div>
-<div class="container-fluid" id="speakers">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
-                <div class="speakers-header">
-                    <i class="fa fa-microphone" aria-hidden="true"></i>
-                    <h2>SPEAKERS</h2>
-                </div>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
+    </div>
+    <div class="hidden-md hidden-lg header-submenu-closed" id="responsive-menu-area">
+        <div id="responsive-menu" class="sub-hidden">
+            <ul>
+                <li><a href="#showcase" title="HOMEPAGE" id="responsive-menu-item-1" class="responsive-menu-item">HOMEPAGE</a></li>
+                <li><a href="#goldsponsors" title="SPONSORS" id="responsive-menu-item-2" class="responsive-menu-item">SPONSORS</a></li>
+                <li><a href="#calendar" title="CALENDAR" id="responsive-menu-item-3" class="responsive-menu-item">CALENDAR</a></li>
+                <li><a href="#speakers" title="SPEAKERS" id="responsive-menu-item-4" class="responsive-menu-item">SPEAKERS</a></li>
+                <li><a href="#latestnews" title="NEWS" id="responsive-menu-item-5" class="responsive-menu-item">NEWS</a></li>
+                <li><a href="#venueinfo-top" title="VENUE INFORMATION" id="responsive-menu-item-6" class="responsive-menu-item">VENUE INFORMATION</a></li>
+                <li><a href="#contact-top" title="CONTACT" id="responsive-menu-item-7" class="responsive-menu-item">CONTACT</a></li>
+            </ul>
         </div>
     </div>
-    <div class="page-icon-animation" id="page-icon-1">
-        <div class="page-icon-area speakers-icon">
-            <i class="fa fa-microphone" aria-hidden="true"></i>
-        </div>
-    </div>
-</div>
-<div class="container-fluid" id="home-speakers">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
+    <div class="container-fluid" id="showcase">
+        <div class="showcase-item showcase-current" data-template="os"id="showcase-1" style="background-image: url('assets/images/1.jpg')">
+            <!-- <div class="showcase-filter-area"></div> -->
+            <div class="container">
                 <div class="row">
-                    <div class="column col-md-4 col-sm-6 col-xs-12">
-                        <div class="speakers-bg-area" style="background-image: url('http://placehold.it/670x300')" id="speaker-link-1">
-                            <div class="speaker-social-area hidden-sm hidden-xs">
-                                <ul>
-                                    <li><a href="javascript:void(0)" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="speaker-job-area">R&amp;D Specialist</div>
-                        <div class="speaker-name-area">JOHN DOE</div>
-                        <div class="speaker-social-area-responsive hidden-md hidden-lg">
-                                <ul>
-                                    <li><a href="javascript:void(0)" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                </ul>
-                        </div>
-                    </div>
-                    <div class="column col-md-4 col-sm-6 col-xs-12">
-                        <div class="speakers-bg-area" style="background-image: url('http://placehold.it/670x300')" id="speaker-link-2">
-                            <div class="speaker-social-area hidden-sm hidden-xs">
-                                <ul>
-                                    <li><a href="javascript:void(0)" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="speaker-job-area">R&amp;D Specialist</div>
-                        <div class="speaker-name-area">JOHN DOE</div>
-                        <div class="speaker-social-area-responsive hidden-md hidden-lg">
-                                <ul>
-                                    <li><a href="javascript:void(0)" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                </ul>
-                        </div>
-                    </div>
-                    <div class="column col-md-4 col-sm-6 col-xs-12">
-                        <div class="speakers-bg-area" style="background-image: url('http://placehold.it/670x300')" id="speaker-link-3">
-                            <div class="speaker-social-area hidden-sm hidden-xs">
-                                <ul>
-                                    <li><a href="javascript:void(0)" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="speaker-job-area">R&amp;D Specialist</div>
-                        <div class="speaker-name-area">JANE DOE</div>
-                        <div class="speaker-social-area-responsive hidden-md hidden-lg">
-                                <ul>
-                                    <li><a href="javascript:void(0)" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                </ul>
-                        </div>
-                    </div>
-                    <div class="column col-md-4 col-sm-6 col-xs-12">
-                        <div class="speakers-bg-area" style="background-image: url('http://placehold.it/670x300')" id="speaker-link-4">
-                            <div class="speaker-social-area hidden-sm hidden-xs">
-                                <ul>
-                                    <li><a href="javascript:void(0)" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="speaker-job-area">R&amp;D Specialist</div>
-                        <div class="speaker-name-area">JANE DOE</div>
-                        <div class="speaker-social-area-responsive hidden-md hidden-lg">
-                                <ul>
-                                    <li><a href="javascript:void(0)" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                </ul>
-                        </div>
-                    </div>
-                    <div class="column col-md-4 col-sm-6 col-xs-12">
-                        <div class="speakers-bg-area" style="background-image: url('http://placehold.it/670x300')" id="speaker-link-5">
-                            <div class="speaker-social-area hidden-sm hidden-xs">
-                                <ul>
-                                    <li><a href="javascript:void(0)" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="speaker-job-area">R&amp;D Specialist</div>
-                        <div class="speaker-name-area">JOHN DOE</div>
-                        <div class="speaker-social-area-responsive hidden-md hidden-lg">
-                                <ul>
-                                    <li><a href="javascript:void(0)" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                </ul>
-                        </div>
-                    </div>
-                    <div class="column col-md-4 col-sm-6 col-xs-12">
-                        <div class="speakers-bg-area" style="background-image: url('http://placehold.it/670x300')" id="speaker-link-6">
-                            <div class="speaker-social-area hidden-sm hidden-xs">
-                                <ul>
-                                    <li><a href="javascript:void(0)" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="speaker-job-area">R&amp;D Specialist</div>
-                        <div class="speaker-name-area">JANE DOE</div>
-                        <div class="speaker-social-area-responsive hidden-md hidden-lg">
-                                <ul>
-                                    <li><a href="javascript:void(0)" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="javascript:void(0)" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                </ul>
-                        </div>
+                    <div class="column col-md-1 col-sm-1 hidden-xs"></div>
+                    <div class="column col-md-11 col-sm-11 col-xs-12">
+                        <div class="showcase-city">London</div>
+                        <div class="showcase-place">WESTMINSTER
+                            <br>ABBEY</div>
+                        <button class="showcase-detail gradient-btn live gradient-color-choice" data-toggle="modal" data-target="#modal-fullscreen">DETAIL</button>
                     </div>
                 </div>
             </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
         </div>
-    </div>
-</div>
-<div class="container-fluid" id="calendar">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
-                <div class="calendar-header">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                    <h2>CALENDAR</h2>
-                </div>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-        </div>
-    </div>
-    <div class="page-icon-animation" id="page-icon-2">
-        <div class="page-icon-area calendar-icon">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-        </div>
-    </div>
-</div>
-<div class="container-fluid" id="home-calendar">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-2 col-sm-6 col-xs-6">
-                <div class="calendar-left-arrow"><a href="javascript:void(0)" title="Prev" id="calendar-arrow-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></div>
-            </div>
-            <div class="column hidden-md hidden-lg col-sm-6 col-xs-6">
-                <div class="calendar-right-arrow"><a href="javascript:void(0)" title="Next" id="calendar-arrow-right2"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
-            </div>
-            <div class="column col-md-8 col-sm-12 col-xs-12">
-                <div id="calendar-show-area">
-                    <div class="calendar-show-item calendar-show-current" id="calendar-show-item-1">
-                        <div class="calendar-day">DAY 1<span>31st DECEMBER</span></div>
-                        <div class="calendar-event-box">
-                            <div class="row">
-                                <div class="column col-md-8 col-sm-8 col-xs-12">
-                                    <div class="calendar-time">10.00</div>
-                                    <div class="calendar-event">Opening Ceremonies</div>
-                                    <div class="calendar-place">Conference Hall 1</div>
-                                    <div class="calendar-event-speaker-name">by <span>JOHN DOE</span></div>
-                                </div>
-                                <div class="column col-md-4 col-sm-4 col-xs-12">
-                                    <div class="calendar-speaker-picture-area">
-                                        <div class="calendar-event-speaker-picture" style="background-image: url('http://placehold.it/100x100')"></div>
-                                        <a href="#speaker-link-1" title="GO TO SPEAKER"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="calendar-event-box">
-                            <div class="row">
-                                <div class="column col-md-8 col-sm-8 col-xs-12">
-                                    <div class="calendar-time">12.00</div>
-                                    <div class="calendar-event">Studio Work</div>
-                                    <div class="calendar-place">Conference Hall 1</div>
-                                    <div class="calendar-event-speaker-name">by <span>JOHN DOE</span></div>
-                                </div>
-                                <div class="column col-md-4 col-sm-4 col-xs-12">
-                                    <div class="calendar-speaker-picture-area">
-                                        <div class="calendar-event-speaker-picture" style="background-image: url('http://placehold.it/100x100')"></div>
-                                        <a href="#speaker-link-1" title="GO TO SPEAKER"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="calendar-event-box">
-                            <div class="row">
-                                <div class="column col-md-8 col-sm-8 col-xs-12">
-                                    <div class="calendar-time">15.00</div>
-                                    <div class="calendar-event">Coctail</div>
-                                    <div class="calendar-place">Main Hall</div>
-                                    <div class="calendar-event-speaker-name">by <span>GOLDEN SPONSOR</span></div>
-                                </div>
-                                <div class="column col-md-4 col-sm-4 col-xs-12">
-                                    <div class="calendar-speaker-picture-area">
-                                        <div class="calendar-event-icon">
-                                            <i class="fa fa-glass" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="calendar-event-box">
-                            <div class="row">
-                                <div class="column col-md-8 col-sm-8 col-xs-12">
-                                    <div class="calendar-time">20.00</div>
-                                    <div class="calendar-event">Dinner</div>
-                                    <div class="calendar-place">Dining Hall</div>
-                                    <div class="calendar-event-speaker-name">by <span>GOLDEN SPONSOR</span></div>
-                                </div>
-                                <div class="column col-md-4 col-sm-4 col-xs-12">
-                                    <div class="calendar-speaker-picture-area">
-                                        <div class="calendar-event-icon">
-                                            <i class="fa fa-cutlery" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="calendar-show-item calendar-show-right" id="calendar-show-item-2">
-                        <div class="calendar-day">DAY 2<span>1st JANUARY</span></div>
-                        <div class="calendar-event-box">
-                            <div class="row">
-                                <div class="column col-md-8 col-sm-8 col-xs-12">
-                                    <div class="calendar-time">9.00</div>
-                                    <div class="calendar-event">Opening Ceremonies</div>
-                                    <div class="calendar-place">Conference Hall 1</div>
-                                    <div class="calendar-event-speaker-name">by <span>JOHN DOE</span></div>
-                                </div>
-                                <div class="column col-md-4 col-sm-4 col-xs-12">
-                                    <div class="calendar-speaker-picture-area">
-                                        <div class="calendar-event-speaker-picture" style="background-image: url('http://placehold.it/100x100')"></div>
-                                        <a href="#speaker-link-1" title="GO TO SPEAKER"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="calendar-event-box">
-                            <div class="row">
-                                <div class="column col-md-8 col-sm-8 col-xs-12">
-                                    <div class="calendar-time">10.00</div>
-                                    <div class="calendar-event">Jane Doe Presentation</div>
-                                    <div class="calendar-place">Conference Hall 1</div>
-                                    <div class="calendar-event-speaker-name">by <span>JANE DOE</span></div>
-                                </div>
-                                <div class="column col-md-4 col-sm-4 col-xs-12">
-                                    <div class="calendar-speaker-picture-area">
-                                        <div class="calendar-event-speaker-picture" style="background-image: url('http://placehold.it/100x100')"></div>
-                                        <a href="#speaker-link-3" title="GO TO SPEAKER"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="calendar-event-box">
-                            <div class="row">
-                                <div class="column col-md-8 col-sm-8 col-xs-12">
-                                    <div class="calendar-time">12.00</div>
-                                    <div class="calendar-event">Coctail</div>
-                                    <div class="calendar-place">Main Hall</div>
-                                    <div class="calendar-event-speaker-name">by <span>GOLDEN SPONSOR</span></div>
-                                </div>
-                                <div class="column col-md-4 col-sm-4 col-xs-12">
-                                    <div class="calendar-speaker-picture-area">
-                                        <div class="calendar-event-icon">
-                                            <i class="fa fa-glass" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="calendar-event-box">
-                            <div class="row">
-                                <div class="column col-md-8 col-sm-8 col-xs-12">
-                                    <div class="calendar-time">15.00</div>
-                                    <div class="calendar-event">Jane Doe Presentation</div>
-                                    <div class="calendar-place">Conference Hall 1</div>
-                                    <div class="calendar-event-speaker-name">by <span>JANE DOE</span></div>
-                                </div>
-                                <div class="column col-md-4 col-sm-4 col-xs-12">
-                                    <div class="calendar-speaker-picture-area">
-                                        <div class="calendar-event-speaker-picture" style="background-image: url('http://placehold.it/100x100')"></div>
-                                        <a href="#speaker-link-4" title="GO TO SPEAKER"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="calendar-event-box">
-                            <div class="row">
-                                <div class="column col-md-8 col-sm-8 col-xs-12">
-                                    <div class="calendar-time">20.00</div>
-                                    <div class="calendar-event">Dinner</div>
-                                    <div class="calendar-place">Dining Hall</div>
-                                    <div class="calendar-event-speaker-name">by <span>GOLDEN SPONSOR</span></div>
-                                </div>
-                                <div class="column col-md-4 col-sm-4 col-xs-12">
-                                    <div class="calendar-speaker-picture-area">
-                                        <div class="calendar-event-icon">
-                                            <i class="fa fa-cutlery" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="calendar-show-item calendar-show-right" id="calendar-show-item-3">
-                       <div class="calendar-day">DAY 3<span>2nd JANUARY</span></div>
-                        <div class="calendar-event-box">
-                            <div class="row">
-                                <div class="column col-md-8 col-sm-8 col-xs-12">
-                                    <div class="calendar-time">9.00</div>
-                                    <div class="calendar-event">Opening Ceremonies</div>
-                                    <div class="calendar-place">Conference Hall 1</div>
-                                    <div class="calendar-event-speaker-name">by <span>JOHN DOE</span></div>
-                                </div>
-                                <div class="column col-md-4 col-sm-4 col-xs-12">
-                                    <div class="calendar-speaker-picture-area">
-                                        <div class="calendar-event-speaker-picture" style="background-image: url('http://placehold.it/100x100')"></div>
-                                        <a href="#speaker-link-1" title="GO TO SPEAKER"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="calendar-event-box">
-                            <div class="row">
-                                <div class="column col-md-8 col-sm-8 col-xs-12">
-                                    <div class="calendar-time">10.00</div>
-                                    <div class="calendar-event">Jane Doe Presentation</div>
-                                    <div class="calendar-place">Conference Hall 1</div>
-                                    <div class="calendar-event-speaker-name">by <span>JANE DOE</span></div>
-                                </div>
-                                <div class="column col-md-4 col-sm-4 col-xs-12">
-                                    <div class="calendar-speaker-picture-area">
-                                        <div class="calendar-event-speaker-picture" style="background-image: url('http://placehold.it/100x100')"></div>
-                                        <a href="#speaker-link-6" title="GO TO SPEAKER"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="calendar-event-box">
-                            <div class="row">
-                                <div class="column col-md-8 col-sm-8 col-xs-12">
-                                    <div class="calendar-time">15.00</div>
-                                    <div class="calendar-event">Closing Ceremonies</div>
-                                    <div class="calendar-place">Conference Hall 1</div>
-                                    <div class="calendar-event-speaker-name">by <span>JOHN DOE</span></div>
-                                </div>
-                                <div class="column col-md-4 col-sm-4 col-xs-12">
-                                    <div class="calendar-speaker-picture-area">
-                                        <div class="calendar-event-speaker-picture" style="background-image: url('http://placehold.it/100x100')"></div>
-                                        <a href="#speaker-link-5" title="GO TO SPEAKER"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="showcase-item showcase-right" data-template="rio" id="showcase-2" style="background-image: url('assets/images/2.jpg')">
+            <!-- <div class="showcase-filter-area"></div> -->
+            <div class="container">
+                <div class="row">
+                    <div class="column col-md-1 col-sm-1 hidden-xs"></div>
+                    <div class="column col-md-11 col-sm-11 col-xs-12">
+                        <div class="showcase-city">London</div>
+                        <div class="showcase-place">TOWER
+                            <br>BRIDGE</div>
+                        <button class="showcase-detail gradient-btn live gradient-color-choice" data-toggle="modal" data-target="#modal-fullscreen">DETAIL</button>
                     </div>
                 </div>
             </div>
-            <div class="column col-md-2 hidden-sm hidden-xs">
-                <div class="calendar-right-arrow"><a href="javascript:void(0)" title="Next" id="calendar-arrow-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+        </div>
+        <div class="showcase-item showcase-right" data-template="rcs" id="showcase-3" style="background-image: url('assets/images/1.jpg')">
+            <!-- <div class="showcase-filter-area"></div> -->
+            <div class="container">
+                <div class="row">
+                    <div class="column col-md-1 col-sm-1 hidden-xs"></div>
+                    <div class="column col-md-11 col-sm-11 col-xs-12">
+                        <div class="showcase-city">London</div>
+                        <div class="showcase-place">BIG
+                            <br>BEN</div>
+                        <button class="showcase-detail gradient-btn live gradient-color-choice" data-toggle="modal" data-target="#modal-fullscreen">DETAIL</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="container-fluid" id="latestnews">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-11 col-sm-12 col-xs-12">
-                <div class="latestnews-header">
-                    <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                    <h2>LATEST NEWS</h2>
+        <div class="showcase-item showcase-right" data-template="os" id="showcase-4" style="background-image: url('assets/images/2.jpg')">            
+            <div class="container">
+                <div class="row">
+                    <div class="column col-md-1 col-sm-1 hidden-xs"></div>
+                    <div class="column col-md-11 col-sm-11 col-xs-12">
+                        <div class="showcase-city">London</div>
+                        <div class="showcase-place">BUCKINGHAM
+                            <br>PALACE</div>
+                        <button class="showcase-detail gradient-btn live gradient-color-choice" data-toggle="modal" data-target="#modal-fullscreen">DETAIL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-left-arrow hidden-xs" id="showcaseleftarrow">
+            <a href="javascript:void(0)" title="Showcase Previous"><img src="assets/images/showcase-arrow-left.png" alt="Arrow Left"/></a>
+        </div>
+        <div class="showcase-right-arrow hidden-xs" id="showcaserightarrow">
+            <a href="javascript:void(0)" title="Showcase Next"><img src="assets/images/showcase-arrow-right.png" alt="Arrow Right"/></a>
+        </div>
+        <div class="scroll-down">
+            <a class="scroll-template" href="#showcase2"><span></span></a>
+        </div>
+        <div class="showcase-pagination">
+            <div class="showcase-pagination-circle">
+                <a href="javascript:void(0)" onmouseover="tooltip.pop(this, '#tip1');" title="Showcase 1" id="showcase-pagination-1" class="showcase-pagination-circle-item pagination-show">
+            </a>
+            </div>
+            <div class="showcase-pagination-circle">
+                <a href="javascript:void(0)" onmouseover="tooltip.pop(this, '#tip2');" title="Showcase 2" id="showcase-pagination-2" class="showcase-pagination-circle-item"></a>
+            </div>
+            <div class="showcase-pagination-circle">
+                <a href="javascript:void(0)" onmouseover="tooltip.pop(this, '#tip3');" title="Showcase 3" id="showcase-pagination-3" class="showcase-pagination-circle-item"></a>
+            </div>
+            <div class="showcase-pagination-circle">
+                <a href="javascript:void(0)" onmouseover="tooltip.pop(this, '#tip4');" title="Showcase 4" id="showcase-pagination-4" class="showcase-pagination-circle-item"></a>
+            </div>
+            <div style="display: none;">
+                <div id="tip1">
+                    <img src="assets/images/1.jpg" class="tip" />
+                </div>
+                <div id="tip2">
+                    <img src="assets/images/2.jpg" class="tip" />
+                </div>
+                <div id="tip3">
+                    <img src="assets/images/1.jpg" class="tip" />
+                </div>
+                <div id="tip4">
+                    <img src="assets/images/2.jpg" class="tip" />
                 </div>
             </div>
         </div>
     </div>
-    <div class="page-icon-animation" id="page-icon-3">
-        <div class="page-icon-area news-icon">
-            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-        </div>
+    <div class="container-fluid" id="showcase2" style="display: none;position: relative;z-index: 1;padding: 0px;overflow: hidden; float: none;">
+        <iframe id="iframe-showcase" class="iframe-template" template-id="os" src="./template/OS/index.html" frameBorder="0" seamless="seamless" style="width:100%; height:100%"></iframe>
+        <iframe id="iframe-showcase" class="iframe-template" template-id="rio" src="./template/Rio/index.html" frameBorder="0" seamless="seamless" style="width:100%; height:100%"></iframe>
+        <iframe id="iframe-showcase" class="iframe-template" template-id="rcs" src="./template/RCS/index.html" frameBorder="0" seamless="seamless" style="width:100%; height:100%"></iframe>
     </div>
-</div>
-    <div class="container-fluid" id="homenews">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-1 col-sm-6 col-xs-6">
-                <div class="content-news-left-arrow"><a href="javascript:void(0)" title="Prev" id="content-news-arrow-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></div>
-            </div>
-            <div class="column hidden-lg hidden-md col-sm-6 col-xs-6">
-                <div class="content-news-right-arrow"><a href="javascript:void(0)" title="Next" id="content-news-arrow-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
-            </div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
-                <div class="content-news-area">
-                       <div class="content-news-area-item news-item-current" id="news-item-1">
-                            <div class="row">
-                           <div class="column col-md-5 col-sm-12 col-xs-12">
-                                <div class="homenews-image" style="background-image: url('http://placehold.it/680x275')"></div>
-                            </div>
-                            <div class="column col-md-7 col-sm-12 col-xs-12">
-                                <div class="homenews-content-area">
-                                        <div class="homenews-header"><a href="javascript:void(0)" title="Save The Date">Save the date!</a></div>
-                                        <div class="homenews-writing">
-                                            You are cordially invited to CAG EVENT 2017 in London which will be held on December 31st 2017. The invitations are 120 Euro + VAT per person and because the space is limited to 2400 attendee only, we will appreciate if you can contact <a href="mailto:yourbusiness@yourbusiness.com" target="_top">yourbusiness@yourbusiness.com</a> for further information and book your place.
-                                        </div>
-                                        <div class="homenews-date">Mar 15th, 2017</div>
-                                </div>
-                            </div>
-                            </div>
-                       </div>
-                       <div class="content-news-area-item news-item-right" id="news-item-2">
-                            <div class="row">
-                           <div class="column col-md-5 col-sm-12 col-xs-12">
-                                <div class="homenews-image" style="background-image: url('http://placehold.it/680x275')"></div>
-                            </div>
-                            <div class="column col-md-7 col-sm-12 col-xs-12">
-                                <div class="homenews-content-area">
-                                        <div class="homenews-header"><a href="javascript:void(0)" title="Save The Date">Save the date!</a></div>
-                                        <div class="homenews-writing">
-                                            You are cordially invited to CAG EVENT 2017 in London which will be held on December 31st 2017. The invitations are 120 Euro + VAT per person and because the space is limited to 2400 attendee only, we will appreciate if you can contact <a href="mailto:yourbusiness@yourbusiness.com" target="_top">yourbusiness@yourbusiness.com</a> for further information and book your place.
-                                        </div>
-                                        <div class="homenews-date">Feb 15th, 2017</div>
-                                </div>
-                            </div>
-                            </div>
-                       </div>
-                       <div class="content-news-area-item news-item-right" id="news-item-3">
-                            <div class="row">
-                           <div class="column col-md-5 col-sm-12 col-xs-12">
-                                <div class="homenews-image" style="background-image: url('http://placehold.it/680x275')"></div>
-                            </div>
-                            <div class="column col-md-7 col-sm-12 col-xs-12">
-                                <div class="homenews-content-area">
-                                        <div class="homenews-header"><a href="javascript:void(0)" title="Save The Date">Save the date!</a></div>
-                                        <div class="homenews-writing">
-                                            You are cordially invited to CAG EVENT 2017 in London which will be held on December 31st 2017. The invitations are 120 Euro + VAT per person and because the space is limited to 2400 attendee only, we will appreciate if you can contact <a href="mailto:yourbusiness@yourbusiness.com" target="_top">yourbusiness@yourbusiness.com</a> for further information and book your place.
-                                        </div>
-                                        <div class="homenews-date">Jan 15th, 2017</div>
-                                </div>
-                            </div>
-                            </div>
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs">
-                <div class="content-news-right-arrow"><a href="javascript:void(0)" title="Next" id="content-news-arrow-right2"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid" id="venueinfo-top">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
-                <div class="venueinfo-header">
-                    <i class="fa fa-cutlery" aria-hidden="true"></i>
-                    <h2>VENUE INFORMATION</h2>
-                </div>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-        </div>
-    </div>
-    <div class="page-icon-animation" id="page-icon-4">
-        <div class="page-icon-area venue-icon">
-            <i class="fa fa-cutlery" aria-hidden="true"></i>
-        </div>
-    </div>
-</div>
-<div class="container-fluid" id="venueinfo-mid"></div>
-<div class="container-fluid" id="venueinfo-bottom">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
-                <div class="venueinfo-area">
-                    <div class="venueinfo-venue">METHODIST CENTRAL HALL</div>
-                    <div class="venueinfo-address">Storey's Gate <br>Westminster / London / England</div>
-                    <div class="venueinfo-tel">T +44 99 9999 9999<br>F +44 99 9999 9999</div>
-                    <div class="venueinfo-link hidden-xs">
-                        <a href="http://placehold.it/1920x1080" class="fancybox" data-fancybox-group="group" title="Gallery">All Photos
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="venuephotos" style="display:none">
-                    <a href="http://placehold.it/1920x1080" class="fancybox" data-fancybox-group="group" title="Gallery"></a>
-                    <a href="http://placehold.it/1920x1080" class="fancybox" data-fancybox-group="group" title="Gallery"></a>
-            </div>
-            <div class="column col-xs-12 hidden-sm hidden-md hidden-lg">
-                <div class="venueinfo-link-xs">
-                    <a href="http://placehold.it/1920x1080" class="fancybox" data-fancybox-group="group" title="Gallery">All Photos
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid" id="contact-top">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-10 col-sm-12 col-xs-12">
-                <div class="contact-header">
-                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                    <h2>CONTACT</h2>
-                </div>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-        </div>
-    </div>
-    <div class="page-icon-animation" id="page-icon-5">
-        <div class="page-icon-area contact-icon">
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-        </div>
-    </div>
-</div>
-<div class="container-fluid" id="contact-mid"></div>
-<div class="container-fluid" id="contact-bottom">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-            <div class="column col-md-4 col-sm-5 col-xs-12">
-                <div class="contact-writing">
-                    395 W Carriage Drive <div class="hidden-sm hidden-md hidden-lg"></div>Your Office No:10<br>Hyde Park 5061 <div class="hidden-sm hidden-md hidden-lg"></div>London / England<br><br>T +44 99 9999 9999<br>F +44 99 9999 9999<br><br><a href="mailto:youremail@youremail.com?" target="_top" title="Mail">youremail@youremail.com</a><br><a href="http://www.yourwebsite.com" title="Website">www.yourwebsite.com</a>
-                </div>
-                <div class="contact-social-icons">
-                    <ul>
-                        <li><a href="javascript:void(0)" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="javascript:void(0)" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="javascript:void(0)" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="javascript:void(0)" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="javascript:void(0)" target="_blank" title="googleplus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="column col-md-6 col-sm-7 col-xs-12">
-                <form action="javascript:void(0)" method="post" id="contactform">
-                <div class="contact-form">
-                    <div class="row">
-                        <div class="column col-md-6 col-sm-12 col-xs-12">
-                            <div class="contact-input-area">
-                                <input type="text" name="contactname" placeholder="NAME" id="contactname">
-                            </div>
-                        </div>
-                        <div class="column col-md-6 col-sm-12 col-xs-12">
-                            <div class="contact-input-area">
-                                <input type="text" name="contactsurname" placeholder="SURNAME" id="contactsurname">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column col-md-6 col-sm-12 col-xs-12">
-                            <div class="contact-input-area">
-                                <input type="text" name="contactemail" placeholder="E-MAIL" id="contactemail">
-                            </div>
-                        </div>
-                        <div class="column col-md-6 col-sm-12 col-xs-12">
-                            <div class="contact-input-area">
-                                <input type="text" name="contactphone" placeholder="TELEPHONE" id="contactphone">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column col-md-12 col-sm-12 col-xs-12">
-                            <div class="contact-input-area" style="height: 120px; padding-top:10px;">
-                                <textarea name="contactmessage" placeholder="MESSAGE" rows="4" id="contactmessage"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column col-md-12 col-sm-12 col-xs-12">
-                            <div class="contact-submit-area">
-                                <input type="submit" name="contactsubmit" value="SEND">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </form>
-            </div>
-            <div class="column col-md-1 hidden-sm hidden-xs"></div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid" id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="column col-md-9 col-sm-9 col-xs-12">
-                <div class="footer-rights">C&amp;G Event 2017 &copy; 2017. All Rights Reserved.</div>
-            </div>
-            <div class="column col-md-3 col-sm-3 col-xs-12">
-                <div class="footer-cag">
-                    <a href="http://www.codeandgraph.com/" title="C&G" target="_blank"><img src="assets/images/caglogo-white.png" alt="C&G Logo"/></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 </body>
-
-<script type="text/javascript" src="assets/js/jsDate.js"></script>
+<!-- <script type="text/javascript" src="assets/js/jsDate.js"></script> -->
 <script type="text/javascript" src="assets/js/jquery-1.12.2-min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
-<script type="text/javascript" src="assets/js/scrolling.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/template-list.js"></script>
+<!-- <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script> -->
+<!-- <script type="text/javascript" src="assets/js/scrolling.js"></script> -->
 <script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
 <script type="text/javascript" src="assets/js/jquery.fancybox-buttons.js?v=1.0.5"></script>
 <script type="text/javascript" src="assets/js/jquery.fancybox-media.js?v=1.0.6"></script>
 <script type="text/javascript" src="assets/js/validate.js"></script>
+<script type="text/javascript" src="assets/js/tooltip.js"></script>
+<script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        verticalCentered: false,
+
+        //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+        css3: false
+    });
+});
+</script>
+
+<script type="text/javascript" src="assets/js/jquery.scrollify.js"></script>
+<script>
+$(function() {
+    $.scrollify({
+        section: ".container-fluid",
+    });
+});
+</script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqPLRFpL8YavE2CM2A-ehGS2XR0dELZfA&callback=initmap" async defer></script>
-<script type="text/javascript">
-	$(document).ready(function() {
-        setcountdowntimer('2017/12/31');
-	});
-</script>
+
 
 </html>
